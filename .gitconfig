@@ -1,0 +1,21 @@
+[user]
+        name = Mike Koch
+        email = mkoch227@gmail.com
+[core]
+        autocrlf = true
+[credential]
+        helper = wincred
+[push]
+        default = current
+[alias]
+        st = status
+        cm = commit -m
+        po = push -u origin
+        setupstream = branch --set-upstream-to
+        ir = rebase --interactive
+        fap = "!git fetch --all --prune; git st"
+        pr = pull --rebase
+        sl = log --pretty=oneline --abbrev-commit
+        alias = config --get-regexp ^alias\\.
+        a = "!git add -A; git st"
+        pnp = "!git pr; git po"
